@@ -1,69 +1,123 @@
-#### Welcome to Model Bank Deployment guide Documetation POC 
+---
+layout: default
+---
 
-Objective
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-Setup a fully functional environment in BaaS with OOTB services + sample integrations with Retail ModelBank default configurations.
+[Link to another page](./anotherpage.md).
 
-Developer Prerequisites
+There should be whitespace between paragraphs.
 
-*   **Get acquainted with BaaS working knowledge,** as basic knowledge is required in order to execute the steps presented in this guide. Read [community guide](https://community.backbase.com/documentation/baas/latest/index "https://community.backbase.com/documentation/baas/latest/index") and [Use Case from BaaS](/wiki/spaces/BAAS/pages/1780121706 "/wiki/spaces/BAAS/pages/1780121706") before starting installation.
-    
-*   **Access to project’s Github organisation**. This should be managed by project’s Solutions Architect or Technical Manager.
-    
-*   Connection to Backbase VPN and Web Proxy:  
-    [How to install Aviatrix VPN on MacBook](https://backbase.atlassian.net/wiki/spaces/I4E/pages/2497020179)  
-    [How to use Webproxy via VPN](https://backbase.atlassian.net/wiki/spaces/I4E/pages/2497709075)
-    
-*   Postman client: [Download Postman | Get Started for Free](https://www.postman.com/downloads/)
-    
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-Scope of this guide
+# Header 1
 
-The scope of the installation, for both out-of-the-box and custom/sample services, is provided as form of ‘**API Catalogue**’ document and **Architecture Diagram**
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-Tools and helpers
+## Header 2
 
-### Dependencies :
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-Construct URLs for project's environment
+### Header 3
 
-You can construct the URLs for your environment in the following format:
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
 
-`RUNTIME_NAME` and `INSTALLATION_NAME` values can be found in DSC (`basic-installation.yml`) as `runtime` and `installation` respectively
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
 
-*   Identity:
-    
-    `1https://identity.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/auth/`
-    
-*   CXP Manager (prior to 2022.02)
-    
-    `1https://app.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/cxp-manager/login`
-    
-*   Retail USA web portal (prior to 2022.02)
-    
-    `1https://app.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/retail-app`
-    
-*   Business USA web portal (including and after 2022.02) (SME only)
-    
-    `1https://business.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/web`
-    
-*   Retail USA web portal (including and after 2022.02)
-    
-    `1https://app.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/web`
-    
-*   Employee portal (prior to 2022.02)
-    
-    `1https://app.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/employee-app/login`
-    
-*   Employee portal (including and after 2022.02)
-    
-    `1https://employee.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/`
-    
-*   Employee essentials (prior to 2022.02)
-    
-    `1https://app.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/employee-essentials/login`
-    
-*   Employee essentials (including and after 2022.02)
-    
-    `1https://employee-essentials.<RUNTIME_NAME>.<INSTALLATION_NAME>.live.backbaseservices.com/`
-    
+#### Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
