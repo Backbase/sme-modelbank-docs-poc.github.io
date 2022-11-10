@@ -25,10 +25,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: asciidoctor-ghpages
-        uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
       - name: Checkout
         uses: actions/checkout@v3
+      - name: asciidoctor-ghpages
+        uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
+        with:
+          pdf_build: true
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
